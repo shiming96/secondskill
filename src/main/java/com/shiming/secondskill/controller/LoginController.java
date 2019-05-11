@@ -1,7 +1,7 @@
 package com.shiming.secondskill.controller;
 
 import com.shiming.secondskill.result.Result;
-import com.shiming.secondskill.service.SecondsKillService;
+import com.shiming.secondskill.service.UserService;
 import com.shiming.secondskill.vo.LoginVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ import javax.validation.Valid;
 public class LoginController {
 
     @Autowired
-    SecondsKillService userService;
+    UserService userService;
 
     private static Logger log = LoggerFactory.getLogger(LoginController.class);
 
@@ -29,9 +29,9 @@ public class LoginController {
 
     @RequestMapping("/do_login")
     @ResponseBody
-    public Result<Boolean> doLogin(HttpServletResponse response, @Valid LoginVo loginVo) {
+    public Result<String> doLogin(HttpServletResponse response, @Valid LoginVo loginVo) {
         log.info(loginVo.toString());
-        userService.login(loginVo);
-        return Result.success(true);
+        String token = userService.login(response, loginVo);
+        return Result.success(token);
     }
 }
