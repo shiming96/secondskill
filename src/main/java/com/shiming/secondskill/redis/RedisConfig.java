@@ -10,42 +10,63 @@ public class RedisConfig {
 	private int port;
 	private int timeout;//秒
 	private String password;
-	private int poolMaxIdle;
-	private int poolMaxWait;//秒
-	public String getHost() {
-		return host;
-	}
-	public void setHost(String host) {
-		this.host = host;
-	}
-	public int getPort() {
-		return port;
-	}
-	public void setPort(int port) {
-		this.port = port;
-	}
-	public int getTimeout() {
-		return timeout;
-	}
-	public void setTimeout(int timeout) {
-		this.timeout = timeout;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public int getPoolMaxIdle() {
-		return poolMaxIdle;
-	}
-	public void setPoolMaxIdle(int poolMaxIdle) {
-		this.poolMaxIdle = poolMaxIdle;
-	}
-	public int getPoolMaxWait() {
-		return poolMaxWait;
-	}
-	public void setPoolMaxWait(int poolMaxWait) {
-		this.poolMaxWait = poolMaxWait;
-	}
+	private int jedisPoolMaxActive;
+	private int jedisPoolMaxIdle;
+	private int jedisPoolMaxWait;//秒
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public int getTimeout() {
+        return timeout;
+    }
+
+    public void setTimeout(int timeout) {
+        this.timeout = timeout;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getJedisPoolMaxActive() {
+        return jedisPoolMaxActive;
+    }
+
+    public void setJedisPoolMaxActive(int jedisPoolMaxActive) {
+        this.jedisPoolMaxActive = jedisPoolMaxActive;
+    }
+
+    public int getJedisPoolMaxIdle() {
+        return jedisPoolMaxIdle;
+    }
+
+    public void setJedisPoolMaxIdle(int jedisPoolMaxIdle) {
+        this.jedisPoolMaxIdle = jedisPoolMaxIdle;
+    }
+
+    public int getJedisPoolMaxWait() {
+        return jedisPoolMaxWait;
+    }
+
+    public void setJedisPoolMaxWait(int jedisPoolMaxWait) {
+        this.jedisPoolMaxWait = jedisPoolMaxWait;
+    }
 }

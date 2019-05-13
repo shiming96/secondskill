@@ -15,10 +15,10 @@ public class RedisPoolFactory {
 	@Bean
 	public JedisPool JedisPoolFactory() {
 		JedisPoolConfig poolConfig = new JedisPoolConfig();
-		poolConfig.setMaxIdle(redisConfig.getPoolMaxIdle());
-		poolConfig.setMaxWaitMillis(redisConfig.getPoolMaxWait() * 1000);
+		poolConfig.setMaxIdle(redisConfig.getJedisPoolMaxIdle());
+		poolConfig.setMaxWaitMillis(redisConfig.getJedisPoolMaxWait() * 1000);
 		JedisPool jp = new JedisPool(poolConfig, redisConfig.getHost(), redisConfig.getPort(),
-				redisConfig.getTimeout()*1000, redisConfig.getPassword(), 0);
+				redisConfig.getTimeout()*1000);
 		return jp;
 	}
 	

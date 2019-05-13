@@ -1,0 +1,52 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "name": "spring.redis",
+      "type": "com.shiming.secondskill.redis.RedisConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "name": "spring.redis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "defaultValue": 0,
+      "name": "spring.redis.jedis-pool-max-active",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "defaultValue": 0,
+      "name": "spring.redis.jedis-pool-max-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "defaultValue": 0,
+      "name": "spring.redis.jedis-pool-max-wait",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "name": "spring.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "defaultValue": 0,
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.shiming.secondskill.redis.RedisConfig",
+      "defaultValue": 0,
+      "name": "spring.redis.timeout",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
