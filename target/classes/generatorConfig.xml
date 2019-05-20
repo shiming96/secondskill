@@ -34,27 +34,7 @@
     </javaClientGenerator>
 
     <!--生成对应表及类名-->
-    <table tableName="goods" domainObjectName="Goods" enableCountByExample="false"
-           enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true"
-    >
-      <!--使用自增长键-->
-      <property name="my.isgen.usekeys" value="true"/>
-      <!--使用数据库中实际的字段名作为生成的实体类的属性-->
-      <generatedKey column="id" sqlStatement="JDBC"/>
-    </table>
-
-    <!--生成对应表及类名-->
-    <table tableName="miaosha_goods" domainObjectName="MiaoShaGoods" enableCountByExample="false"
-           enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true"
-    >
-      <!--使用自增长键-->
-      <property name="my.isgen.usekeys" value="true"/>
-      <!--使用数据库中实际的字段名作为生成的实体类的属性-->
-      <generatedKey column="id" sqlStatement="JDBC"/>
-    </table>
-
-    <!--生成对应表及类名-->
-    <table tableName="order_info" domainObjectName="OrderInfo" enableCountByExample="false"
+    <table tableName="miaosha_info" domainObjectName="MiaoShaOrder" enableCountByExample="false"
            enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true"
     >
       <!--使用自增长键-->

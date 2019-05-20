@@ -1,29 +1,18 @@
 package com.shiming.secondskill.pojo;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 public class OrderInfo {
     private Long id;
-
     private Long userId;
-
     private Long goodsId;
-
-    private Long deliveryAddrId;
-
+    private Long  deliveryAddrId;
     private String goodsName;
-
     private Integer goodsCount;
-
-    private BigDecimal goodsPrice;
-
-    private Byte orderChannel;
-
-    private Byte status;
-
+    private Double goodsPrice;
+    private Integer orderChannel;
+    private Integer status;
     private Date createDate;
-
     private Date payDate;
 
     public Long getId() {
@@ -63,7 +52,7 @@ public class OrderInfo {
     }
 
     public void setGoodsName(String goodsName) {
-        this.goodsName = goodsName == null ? null : goodsName.trim();
+        this.goodsName = goodsName;
     }
 
     public Integer getGoodsCount() {
@@ -74,27 +63,27 @@ public class OrderInfo {
         this.goodsCount = goodsCount;
     }
 
-    public BigDecimal getGoodsPrice() {
+    public Double getGoodsPrice() {
         return goodsPrice;
     }
 
-    public void setGoodsPrice(BigDecimal goodsPrice) {
+    public void setGoodsPrice(Double goodsPrice) {
         this.goodsPrice = goodsPrice;
     }
 
-    public Byte getOrderChannel() {
+    public Integer getOrderChannel() {
         return orderChannel;
     }
 
-    public void setOrderChannel(Byte orderChannel) {
+    public void setOrderChannel(Integer orderChannel) {
         this.orderChannel = orderChannel;
     }
 
-    public Byte getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(Byte status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
